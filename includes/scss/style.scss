@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap');
+
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+        max-width: 100%;
+        overflow-x: hidden;
+    body{
+        max-width: 100%;
+        overflow-x: hidden;
+        font-family: 'Rubik', sans-serif;
+        color: #333333;
+        overflow-x: hidden;
+        .container{
+            @media screen and (min-width: 1200px) {
+                max-width: 1256px;
+            }
+        }
+        .container.header-container{
+            max-width: 100%;
+            a{
+                width: 9rem;
+                height: 1.8rem;
+                margin: 22px 0;
+                @media screen and (min-width: 1024px) {
+                    margin: 22px 200px 22px 0;
+                }
+                .logo {
+                    cursor: pointer;
+                }
+            }            
+            .cadence-info {
+                font-size: 1.4rem;
+                margin: 2.2rem 5rem;
+                @media screen and (max-width: 1023px) { 
+                        display: none !important;            
+                } 
+                ul {
+                    list-style-type: none;
+                    display: flex;
+                    li {
+                        cursor: pointer;
+                        .fa {
+                            font-size: 1.8rem;
+                            margin-top: 3px;
+                        }
+                    }
+                }                
+            }
+        }
+        .container.banner-container{     
+            max-width: 100%;  
+            padding: 0;    
+            .row {
+                @media screen and (min-width: 1024px) {
+                    padding: 0 15px;
+                }
+                .banner-text {
+                    text-align: center;                
+                    color:#fff;
+                    background: #3E576B;
+                    @media screen and (min-width: 1024px) {
+                        background: transparent;
+                        left: 50%;
+                        position: absolute;
+                        top: 30rem;
+                        transform: translate(-50%, -50%);
+                    }
+                    .text-head {                    
+                        font-weight: 500;
+                        font-size: 2.4rem;
+                        padding-top: 32px;
+                        @media screen and (min-width: 1024px) {
+                            font-size: 5rem;
+                            margin-bottom: 0;
+                        }
+                    }
+                    .text-content {
+                        font-size: 1.8rem;
+                        font-weight: 300;
+                        padding-bottom: 1.5rem;
+                        @media screen and (min-width: 1024px) {
+                            font-size: 2.4rem;
+                        }
+                    }
+                    button {
+                        width:21.8rem;
+                        margin-bottom: 2.4rem;
+                        padding: .8rem 0;
+                        font-size: 1.6rem;
+                        background: transparent;
+                        color: #fff;
+                        text-transform: uppercase;
+                        border: 1px solid #fff;
+                        @media screen and (min-width: 1024px) {
+                            width: 21.1rem;                    
+                            font-size: 1.8rem;                    
+                            padding: 1.2rem 0;
+                        }
+                    }
+                }
+            }  
+        }
+        .container.info-container {
+            .row {
+                h2{
+                    font-size: 2.7rem;
+                    font-weight: 300;
+                    padding:5rem 0;
+                    @media screen and (min-width: 1024px) {
+                        font-size: 4rem;
+                    }
+                }
+                .blog-info{
+                    width: 50%;
+                    padding: 0 1.5rem;
+                    margin-bottom: 4rem;;
+                    @media screen and (min-width: 1024px) {
+                        width: 25%;
+                    }
+                    .image-container {
+                        min-height: 5rem;
+                        img{
+                            vertical-align: middle;
+                        }
+                        .watch-img {
+                            margin-top: .5rem;
+                        }
+                        .battery-img {
+                            margin-top: 1rem;
+                        }
+                        @media screen and (min-width: 1024px) {
+                            min-height: 80px;
+                            .vector-img {
+                                width: 70px;
+                                height: 80px;
+                            }
+                            .watch-img {
+                                height: 62px;
+                                width: 80px;
+                                margin-top: 1rem;
+
+                            }
+                            .battery-img {
+                                width:80px;
+                                height:40px;
+                                margin-top: 2rem;
+                            }
+                            .right-img {
+                                width: 80px;
+                                height: 80px;
+                            }
+                        }
+                    }
+                    h3{
+                        padding-top: 2rem;
+                        padding-bottom: 1rem;
+                        font-size: 1.8rem;
+                        font-weight: 400;
+                        @media screen and (min-width: 1024px) {
+                            font-size: 2.7rem;
+                        }
+                        span{
+                            margin: 0 auto;
+                            margin-top: 1rem;
+                            padding: 0px 2rem;
+                            display: block;
+                            width: 65%;
+                            @media screen and (min-width: 1024px) {
+                                width: 75%;
+                            }
+                            &.vector {
+                                border-bottom:1px solid;
+                                border-image: linear-gradient(139.13deg, #18A0FB 0%, #2DCCD3 100%) 1;                                
+                            }
+                            &.watch {
+                                border-bottom:1px solid;
+                                border-image: linear-gradient(232.58deg, #2DCCD3 0%, #93DA49 100%) 1;                                
+                            }
+                            &.battery{
+                                border-bottom:1px solid;
+                                border-image: linear-gradient(116.57deg, #93DA49 0%, #FFB81C 100%) 1;                                
+                            }
+                            &.right {
+                                border-bottom:1px solid;
+                                border-image: linear-gradient(135deg, #FFB81C 0%, #FF8200 100%) 1;                                
+                            }
+                        }
+                        
+                    }
+                    p{
+                        padding:0 1.5rem;
+                        line-height: 1.8rem;
+                        font-size: 1.2rem;
+                        @media screen and (min-width: 1024px) {
+                            padding: 2.5rem 0;
+                            line-height: 2.7rem;
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+
+        }
+        .slider-container {
+            background: #E5E5E5;
+            position: relative;
+            .container {
+                .slider-heading {
+                    padding-top: 4.7rem;
+                    @media screen and (min-width: 1024px) {
+                        padding-top: 8rem;
+                    }
+                    h2{ 
+                        font-size: 2.7rem;
+                        font-weight: 300;
+                        margin-bottom: 1rem;
+                        @media screen and (min-width: 1024px) {
+                            font-size: 4.1rem;
+                        }
+                    }
+                    p{
+                        font-size: 1.2rem;
+                        font-weight: 300;
+                        @media screen and (min-width: 1024px) {
+                            width: 50%;
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+                .caraousal-comp {
+                    .caraousal-content{
+                        width: 100%;
+                        .caraousal-btn{
+                            width: 100%;
+                            .carousel {
+                                .carousel-inner{
+                                    .carousel-item {
+                                        margin: 1.5rem 0;
+                                        @media screen and (min-width: 1024px) {
+                                            margin: 4rem 0 9.9rem 0;
+                                        }
+                                        img {
+                                            max-width: 100%;
+                                            @media screen and (min-width: 1024px) {
+                                                float:right;
+                                                margin-top: 10rem;
+                                            }
+                                        }
+                                        .content {
+                                            position: relative;
+                                            width: 100%;
+                                            background: #fff;
+                                            padding: 2.7rem;
+                                            @media screen and (min-width: 1024px) {
+                                                position: absolute;
+                                                top: 2.5rem;                                                
+                                                width: 52rem;
+                                            }
+                                            h3{
+                                                font-size: 1.8rem;                                                
+                                                font-weight: 400;
+                                                margin-bottom: 2.7rem;
+                                                @media screen and (min-width: 1024px) {
+                                                    font-size: 2.7rem;
+                                                }
+                                            }
+                                            p{
+                                                font-weight: 300;
+                                                font-size: 1.2rem;
+                                                line-height: 1.8rem;
+                                                @media screen and (min-width: 1024px) {
+                                                    font-size: 1.8rem;
+                                                    line-height: 2.7rem;
+                                                }
+                                            }
+                                            .more {
+                                                display: none;
+                                            }
+                                            .myBtn {
+                                                float: right;
+                                                text-transform: uppercase;
+                                                font-weight: 400;
+                                                font-size: 1.2rem;
+                                                line-height: 1.9rem;
+                                                margin-top: 1.7rem;
+                                                color: #147BD1;
+                                                @media screen and (min-width: 1024px) {
+                                                    font-size: 1.6rem;
+                                                }
+                                            }
+                                            .slide-all{
+                                                margin-top: 5.8rem;
+                                                position: relative;
+                                                padding-bottom: 3rem;
+                                                @media screen and (min-width: 1024px) {
+                                                    justify-content: start !important;
+                                                }
+                                                .carousel-control-prev {
+                                                    border: #f5f5f5;
+                                                    color: #333333;
+                                                    margin-right: 1.9rem;
+                                                }
+                                                .carousel-control-next {
+                                                    border: #333;
+                                                    color: #fff;
+                                                }
+                                                .slide-count{
+                                                    position: absolute;
+                                                    top: 6rem;
+                                                    padding: 0;
+                                                    font-size: 1.8rem;
+                                                    font-weight: 400;
+                                                    @media screen and (min-width: 1024px) {
+                                                        position: relative;
+                                                        top: 0;
+                                                        padding: 3rem 0 0 2rem;
+                                                    }
+                                                }
+                                            }
+
+                                        }
+                                    }
+
+                                }
+                                
+                                .d-flex {
+                                    .carousel-control-prev,.carousel-control-next {
+                                        height: 54px;
+                                        width: 54px;
+                                        border-radius: 50%;
+                                        position: relative;
+                                        opacity: 1;
+                                        font-size: 1.6rem;
+
+                                    }
+                                    .carousel-control-prev {
+                                        background: #F5F5F5;
+                                    }
+                                    .carousel-control-next {
+                                        background:#333333;
+                                    }
+                                }
+                                
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+        .lorem-container {
+            background: #fff;
+            margin-bottom: 4rem;
+            @media screen and (min-width: 1024px) {
+                background-image: url("../images/mask.png");
+            }
+            .container{                
+                h2{
+                    font-weight: 300;
+                    font-size: 2.7rem;
+                    padding: 5rem 0 2.7rem 0;
+                    width: 75%;
+                    text-transform: capitalize;
+                    @media screen and (min-width: 1024px) {
+                        font-size: 4.1rem;
+                        padding: 8.1rem 0 4rem 0;
+                        width: 100%;
+                    }                    
+                }                
+                .sub-container {
+                    position: relative;
+                    .left-col{
+                        width: 100%;
+                        position: absolute;
+                        top:85%;
+                        background:#fff;
+                        border:1px solid;
+                        border-image: linear-gradient(128.26deg, #FFB81C 3.75%, #93DA49 94.95%) 1;
+                        @media screen and (min-width: 1024px) {
+                            width: 52rem;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }                       
+                        .left-content {
+                            padding: 1.5rem;
+                            @media screen and (min-width: 1024px) {
+                                padding:4.5rem 5.4rem;
+                            }
+                            img{
+                                width:4.4rem;
+                                @media screen and (min-width: 1024px) {
+                                    width: 7.7rem;
+                                }
+                            }
+                            .lorem-content {
+                                font-style: italic;
+                                font-weight: 300;
+                                font-size:1.2rem;
+                                line-height: 1.8rem;
+                                padding: 1.1rem 0 2.7rem 0;
+                                @media screen and (min-width: 1024px) {
+                                    padding: 3.4rem 0;
+                                    font-size: 1.8rem;
+                                    line-height: 2.7rem;
+                                }
+                            }
+                            .read-article {
+                                a{
+                                    font-size: 1.2rem;
+                                    line-height: 2.7rem;
+                                    text-transform: uppercase;
+                                    color: #147BD1;
+                                    cursor: pointer;
+                                    @media screen and (min-width: 1024px) {
+                                        font-size: 1.8rem;
+                                    }
+                                }
+                                
+                            }
+                        }
+                        
+                    }
+                    .right-col {
+                        text-align: right;
+                        margin-right: -15px;
+                        margin-left: -15px;
+                        @media screen and (min-width: 1024px) {
+                            margin: 0;
+                        }
+                        img{
+                            max-width: 100%;
+                            
+                        }
+                    }
+                }
+
+            }
+        }
+        
+    }
+}
